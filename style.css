@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+
+body,
+html {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  height: 100%;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.8em;
+  color: #555555;
+  box-sizing: border-box;
+}
+
+.pimg1,
+.pimg2,
+.pimg3 {
+  position: relative;
+  opacity: 0.7;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  background-attachment: fixed;
+}
+
+.pimg1 {
+  background-image: url("./img/img1.jpg");
+  min-height: 100%;
+}
+
+.pimg2 {
+  background-image: url("./img/img2.jpg");
+  min-height: 500px;
+}
+
+.pimg3 {
+  background-image: url("./img/img3.jpg");
+  min-height: 500px;
+}
+
+.section {
+  text-align: center;
+  padding: 3rem 6rem;
+  box-shadow: 0 20px 1em #000000, 0 -20px 1em #000000;
+}
+
+.section-light {
+  background-color: #dddddd;
+}
+
+.section-dark {
+  background-color: #333;
+  color: #dddddd;
+}
+
+.ptext {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000000;
+  font-size: 1.5rem;
+  letter-spacing: 0.5rem;
+  text-transform: uppercase;
+}
+
+.ptext .border {
+  background-color: #333333;
+  color: #ffffff;
+  padding: 1.4rem;
+}
+.ptext .border.transp {
+  background-color: transparent;
+}
+
+/* Media */
+
+@media (max-width: 568px) {
+  .pimg1,
+  .pimg2,
+  .pimg3 {
+    background-attachment: scroll;
+  }
+
+  .pimg2,
+  .pimg3 {
+    min-height: 300px;
+  }
+
+  .ptext {
+    font-size: 1rem;
+    letter-spacing: 0.3rem;
+  }
+  .ptext .border.transp {
+    color: #cccccc;
+  }
+
+  .section {
+    padding: 1rem 2rem;
+  }
+}
